@@ -7,7 +7,7 @@
    ========================= */
 
 // ------------ CONFIG ------------
-const GITHUB_OWNER = "homargomes"; 
+const GITHUB_OWNER = "HomarGomes"; 
 const GITHUB_REPO  = "APL_catlog";         // <-- change me
 const GITHUB_LABEL_FILTER = "";          // optional label to filter issues; set "" to read all open issues
 
