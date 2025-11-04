@@ -1,60 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Clothing Catalog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Shared Catalog</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #f8f8f8;
-      margin: 0; padding: 2rem;
-    }
-    h1 { text-align: center; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .card img {
-      width: 100%; border-radius: 10px;
-      object-fit: cover;
-    }
-    .card h3 { margin: 0.5rem 0; font-size: 1.1rem; }
-    .card a { color: #0070f3; text-decoration: none; }
+    body { font-family: system-ui, sans-serif; background:#f8f8f8; margin:0; padding:2rem; }
+    h1 { text-align:center; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1.5rem; }
+    .card { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 2px 5px rgba(0,0,0,.1); }
+    .card img { width:100%; border-radius:10px; object-fit:cover; }
+    .card h3 { margin:.5rem 0; font-size:1.1rem; }
+    .card a { color:#0070f3; text-decoration:none; }
   </style>
 </head>
 <body>
   <h1>🛍️ My Shared Catalog · <span id="count"></span></h1>
-  <input id="q" 
-    placeholder="Search name/site…" 
+
+  <input id="q" placeholder="Search name/site…"
     style="display:block;margin:0 auto 1rem;max-width:420px;width:100%;padding:.6rem .8rem;border-radius:8px;border:1px solid #ddd;">
 
+  <div id="save-strip" style="display:none"></div>
   <div class="grid" id="catalog"></div>
 
-  <script>
-    // Example data — replace with your exported Notion data later
-    const items = [
-      { name: "Denim Jacket", img: "https://via.placeholder.com/300", site: "Zara", price: "$59", link: "#" },
-      { name: "Linen Shirt", img: "https://via.placeholder.com/300", site: "H&M", price: "$25", link: "#" }
-    ];
-
-    const catalog = document.getElementById("catalog");
-    items.forEach(item => {
-      catalog.innerHTML += `
-        <div class="card">
-          <img src="${item.img}">
-          <h3>${item.name}</h3>
-          <p>${item.site} – ${item.price}</p>
-          <a href="${item.link}" target="_blank">View</a>
-        </div>`;
-    });
-  </script>
+  <!-- Load your real logic (make sure catalog.js is in the repo root) -->
+  <script src="catalog.js?v=3"></script>
 </body>
 </html>
