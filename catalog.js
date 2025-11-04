@@ -7,8 +7,8 @@
    ========================= */
 
 // ------------ CONFIG ------------
-const GITHUB_OWNER = "your-github-username";   // <-- change me
-const GITHUB_REPO  = "shared-catalog";         // <-- change me
+const GITHUB_OWNER = "homargomes"; 
+const GITHUB_REPO  = "APL_catlog";         // <-- change me
 const GITHUB_LABEL_FILTER = "source";          // optional label to filter issues; set "" to read all open issues
 
 const UI = {
