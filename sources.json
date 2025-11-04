@@ -1,0 +1,15 @@
+[
+  {
+    "type": "shopify_product",
+    "url": "https://www.mineperfumelab.com/en-us/products/orientali-e-legnose"
+  },
+  {
+    "type": "shopify_collection",
+    "url": "https://ayguey.com/collections/playeras-hombre" 
+  }
+
+  // Add more items here as you go.
+  // Supported types: "shopify_product", "shopify_collection", "manual"
+  // For manual (non-Shopify), use:
+  // { "type": "manual", "name": "Item name", "image": "https://...", "price": "$49", "site": "Brand", "link": "https://..." }
+]
