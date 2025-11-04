@@ -9,7 +9,7 @@
 // ------------ CONFIG ------------
 const GITHUB_OWNER = "homargomes"; 
 const GITHUB_REPO  = "APL_catlog";         // <-- change me
-const GITHUB_LABEL_FILTER = "source";          // optional label to filter issues; set "" to read all open issues
+const GITHUB_LABEL_FILTER = "";          // optional label to filter issues; set "" to read all open issues
 
 const UI = {
   gridId: "catalog",
